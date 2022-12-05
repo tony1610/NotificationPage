@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="myStyleSheet.css">
+
+  <script src="https://kit.fontawesome.com/e1d1facf77.js" crossorigin="anonymous"></script>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Notifications page</title>
+
+</head>
+<body>
+
+  <div class="wrapper">
+
+<!-- NOTIFICATION CONTAINER -->
+
+    <header class="notification--container">
+      <h1 class="notification__title">Notifications</h1>
+       <P class="notification__count">?</P>
+      <button class="btn notification__reset">Mark all as read</button>
+    </header>
+
+<!-- NOTIFICATION CONTENT -->
+
+<main class="notification--card-container">
+  
+<!-- MARK WEBBER -->
+    <div class="notif--card">
+      <img class="avatar" src="assets/images/avatar-mark-webber.webp" alt="Mark's avatar">
+      <div class="flex--container unread">
+        <p class="notif__content">
+          <strong>Mark Webber</strong> reacted to your recent post
+          <strong class="notif__coment">My first tournament today!</strong>
+        </p>
+        <span class="time__stamp">1m ago</span>
+      </div>
+    </div>
+
+<!-- ANGELA GRAY -->
+    <div class="notif--card">
+
+      <img class="avatar" src="assets/images/avatar-angela-gray.webp" alt="Angela's Avatar">
+      <div class="flex--container unread">
+        <p class="notif__content">
+          <strong>Angela Gray</strong> followed you
+          <strong class="notif__coment"></strong>
+        </p>
+        <span class="time__stamp">5m ago</span>
+      </div>
+      
+    </div>
+
+<!-- JACOB THOMPSOON -->
+    <div class="notif--card">
+
+      <img class="avatar" src="assets/images/avatar-jacob-thompson.webp" alt="Jacob's Avatar">
+      <div class="flex--container unread">
+        <p class="notif__content">
+          <strong>Jacob Thompson</strong> has joined your group
+          <strong class="notif__coment chess"><a href="" class="chess__link">Chess Club</a></strong>
+        </p>
+        <span class="time__stamp">1 day ago</span>
+      </div>
+      
+    </div>
+
+<!-- RIZKY HASANUDDIN -->
+    <div class="notif--card">
+
+      <img class="avatar" src="assets/images/avatar-rizky-hasanuddin.webp" alt="Rizky's Avatar">
+      <div class="flex--container">
+        <p class="notif__content">
+          <strong>Rizky Hasanuddin</strong> sent you a private message
+          <strong class="notif__coment chess"><a href="" class="chess__link"></a></strong>
+        </p>
+        <span class="time__stamp">5 day ago</span>
+      </div>
+      <p class="private__message">
+        <a href="" class="message__link">
+          Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and
+          I'm already having lots of fun and improving my game.
+        </a>
+      </p>
+      
+    </div>
+
+<!-- KIMBERLY SMITH -->
+    <div class="notif--card">
+
+      <img class="avatar" src="assets/images/avatar-kimberly-smith.webp" alt="Kimberly's Avatar">
+      <div class="flex--container">
+        <div class="flex--container flex-inline">
+          <p class="notif__content">
+            <strong>Kimberly Smith</strong> commented on your picture
+            <strong class="notif__coment chess"></strong>
+          </p>
+          <a href="#" class="image__link"><img class="avatar chess--image" src="assets/images/image-chess.webp" alt=""></a>
+        </div>
+          <span class="time__stamp">1 week ago</span>
+      </div>
+      
+    </div>
+
+<!-- NATHAN PETERSON -->
+    <div class="notif--card">
+
+      <img class="avatar" src="assets/images/avatar-nathan-peterson.webp" alt="Nathan's Avatar">
+      <div class="flex--container">
+        <div class="flex--container flex-inline">
+          <p class="notif__content">
+            <strong>Nathan Peterson</strong> reacted to your recent post
+            <strong class="notif__coment">5 end-game strategies to increase your win rate</strong>
+          </p>
+        </div>
+          <span class="time__stamp">2 weeks ago</span>
+      </div>
+      
+    </div>
+
+<!-- ANNA KIM -->
+    <div class="notif--card">
+
+      <img class="avatar" src="assets/images/avatar-anna-kim.webp" alt="Anna's Avatar">
+      <div class="flex--container">
+        <div class="flex--container flex-inline">
+          <p class="notif__content">
+            <strong>Anna Kim</strong> left the group
+            <strong class="notif__coment chess">Chess Club</strong>
+          </p>
+        </div>
+          <span class="time__stamp">2 weeks ago</span>
+      </div>
+      
+    </div>
+    
+   </main>
+  
+  </div>
+  
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Tony Febus</a>.
+  </div>
+
+  <script src="mainJS.js"></script>
+</body>
+</html>
